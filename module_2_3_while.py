@@ -40,10 +40,10 @@
 
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 index = 0
-while index < len(my_list):
+while index < len(my_list): # Пока индекс меньше длины списка
     element = my_list[index]
     if element > 0:
         print(element, end=" ")
     elif element < 0:
         break
-    index += 1 # Счётчик увеличивающий шаг итерации по длине списка 0 = 42, 1 = 69, 2 = 322 и так далее
+    index += 1  # Счётчик увеличивающий шаг итерации по длине списка 0 = 42, 1 = 69, 2 = 322 и так далее

@@ -23,13 +23,27 @@
 # else:
 #     print(f"{number} Число не делится ни на 3 ни на 5 без остатка")
 
-print("Введите три числа для сравнения.")
-first = int(input("Введите какое либо число для сравнения №1: "))
-second = int(input("Введите какое либо число для сравнения №2: "))
-third = int(input("Введите какое либо число для сравнения №3: "))
-if first == second == third:
-    print("Все числа равны")
-elif first == second or first == third or second == third:
-    print("Два числа равны")
-else:
-    print("Все числа разные")
+# print("Введите три числа для сравнения.")
+# first = int(input("Введите какое либо число для сравнения №1: "))
+# second = int(input("Введите какое либо число для сравнения №2: "))
+# third = int(input("Введите какое либо число для сравнения №3: "))
+# if first == second == third:
+#     print("Все числа равны")
+# elif first == second or first == third or second == third:
+#     print("Два числа равны")
+# else:
+#     print("Все числа разные")
+
+while True: # Применил цикл Whole из следующей темы!!! Это же бомба.
+    print("Введите три числа для сравнения.")
+    first = int(input("Введите какое либо число для сравнения №1: "))
+    second = int(input("Введите какое либо число для сравнения №2: "))
+    third = int(input("Введите какое либо число для сравнения №3: "))
+    if first == second == third:
+        print("Все числа равны")
+    elif first == second or first == third or second == third:
+        print("Два числа равны")
+        continue
+    else:
+        print("Все числа разные")
+        break
