@@ -104,3 +104,49 @@
 #
 # # Показать сумму чисел.
 # print(f"Сумма составляет {total}.")
+
+"""Работа цикла for со списком"""
+# list_ = ["one", "two", "three"]
+# print(list_)
+# for i in list_:
+#     if i == "two":
+#         list_.remove(i)
+#
+# print(list_)
+
+"""А можно это сделать так, по индексу через range"""
+# list_ = ["one", "two", "three"]
+# print(list_)
+# for i in range(len(list_)):
+#         print(list_[i])
+#         list_[i] = "8-)"
+#         list_[1] = "Irina"
+#
+# print(list_)
+
+"""Сложение элементов в списке"""
+# list_ = ["one", "two", "three"]
+# list_2 = [2, 3, 4, 5, 1]
+# sum_ = 0
+# for i in range(len(list_2)):
+#     sum_ += list_2[i]
+#
+# print(sum_)
+
+"""Таблица умножения, вложенный цикл"""
+# for i in range(1, 11):
+#     for j in range(1, 11):
+#         print(f"{i} x {j} = {i * j}", end=" ")
+
+"""Перебор словаря dict циклом for"""
+# dict_ = {"a": 1, "b": 2, "c": 3}
+# for i in dict_: # for i, k in dict_.item(): Можно так
+#     print(i, dict_[i]) # print(i, k) Можно так
+
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+primes = []
+not_primes = []
+for num in numbers:
+    if num < 2:
+        is_primes = True
